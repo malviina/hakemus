@@ -1,7 +1,3 @@
-var text4 = "Olen 30-vuotias helsinkiläinen journalismin opiskelija.# Koodaaminen on kuitenkin intohimoni.%Olen viime vuodet työskennellyt sen eteen, että voisin yhdistää journalismin ja koodauksen.# Miksi?# Koska koodaminen on parasta ikinä!# Ja tiedonvälittäminen ja tarinankerronta toiseksi parasta.";
-
-var text2 = ["Yle Plus-desk - Koodaava toimittaja%Työhakemus", "Olen 30-vuotias helsinkiläinen journalismin opiskelija.# Koodaaminen on kuitenkin intohimoni. #Olen viime vuodet työskennellyt sen eteen, että voisin yhdistää journalismin ja koodauksen. #Miksi?# Koska koodaminen on parasta ikinä!# Ja tiedonvälittäminen ja tarinankerronta toiseksi parasta.", ""];
-
 var textData = [["otsikko","Yle Plus-desk - Koodaava toimittaja%1300 Työhakemus"],
                 
                 ["nimike", "Malviina Hallamaa%0100 040-5070357%0150 malviina.hallamaa@gmail.com%0400 "],
