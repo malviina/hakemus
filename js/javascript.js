@@ -4,15 +4,15 @@ var text2 = ["Yle Plus-desk - Koodaava toimittaja%Työhakemus", "Olen 30-vuotias
 
 var textData = [["otsikko","Yle Plus-desk - Koodaava toimittaja%1300 Työhakemus"],
                 
-                ["nimike", "Malviina Hallamaa%0050 040-5070357%0050 malviina.hallamaa@gmail.com"],
+                ["nimike", "Malviina Hallamaa%0100 040-5070357%0150 malviina.hallamaa@gmail.com%0400 "],
                 
                 ["kotisivu", "malviinahallamaa.net"],
                 
-                ["tekstikenttä", "Olen 30-vuotias helsinkiläinen journalismin opiskelija.#800 Koodaaminen on kuitenkin intohimoni. #800 Olen viime vuodet työskennellyt sen eteen, että voisin yhdistää journalismin ja koodauksen.#800 Miksi?#800 Koska koodaminen on parasta ikinä!#800 Ja tiedonvälittäminen ja tarinankerronta toiseksi parasta."]];
+                ["tekstikenttä", "Olen 30-vuotias helsinkiläinen journalismin opiskelija.#800 Koodaaminen on kuitenkin intohimoni. #800 Olen viime vuodet tehnyt töitä sen eteen,#100 että voisin yhdistää journalismin ja koodauksen.#800 Miksi?#800 Koska koodaminen on parasta ikinä!#800 Ja tiedon välittäminen.#600 Ja tarinankerronta.#999 Ja tietenkin myös uuden oppiminen."]];
 
 var cursor = ["cursor1", "cursor2", "cursor3", "cursor4"];
 
-var delays = [1800, 0300, 1800, 0];
+var delays = [1800, 0, 1800, 0];
 
 
 var printing = false;
@@ -30,11 +30,8 @@ var trigger0_fade = new Waypoint({
     handler: function(direction) {
         document.getElementById("header").classList.toggle("fade"),
         document.getElementById("first-section").classList.toggle("fade"),
-        //document.getElementById("background").classList.toggle("fade")
+        document.getElementById("bouncer").classList.toggle("fade")
         document.getElementById("whole").classList.toggle("blackBG");
-        if (direction == "down") {
-            document.getElementById("bouncer").classList.add("invisible");
-        };
     },
     offset: "80%"
 });
@@ -80,13 +77,10 @@ function print(text, id) {
         var timeStamp = "";
         i++;
         for (j=0; j < 3; j++) {
-            console.log(text.charAt(i));
             timeStamp += text.charAt(i);
             i++;
         }
         var time = parseInt(timeStamp);
-        console.log(time);
-        console.log(typeof(time));
         setTimeout(function() {
             print(text, id);
         }, time);
@@ -124,8 +118,8 @@ function print(text, id) {
             };
             if (i == text.length) {
                 if (k == textData.length) {
-                   document.getElementById("first-section").classList.remove("invisible");
-                    document.getElementById("bouncer").classList.remove("invisible");
+                    document.getElementById("first-section").classList.remove("invisible");
+                    setTimeout(function () {document.getElementById("bouncer").classList.toggle("fade");}, 700);
                 };
                 done = true;
                 if (k < textData.length) {
