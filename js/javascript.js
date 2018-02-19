@@ -24,11 +24,6 @@ var init = false;
 
 window.addEventListener("scroll", function() {initPrint()}, {once: true});
 
-window.addEventListener("scroll", function() {if (done) {
-    done = false;
-    initPrint()
-                  
-}});
 
 var trigger0_fade = new Waypoint({
     element: document.getElementById("trigger0"),
@@ -142,7 +137,7 @@ function print(text, id) {
                     initPrint();
                 }, time);
             }
-        }, 0);
+        }, 50);
        
         }
     }
