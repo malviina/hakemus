@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    color: white;
+    background-color: #101010;
+    font-family: Open sans;
+    font-weight: 300;
+}
+
+canvas { width: 100%; height: 100% }
+
+.content {
+    font-size: 0.9em;
+    color: white;
+    line-height: 1.7em;
+    width: 20vw;
+    top: 30%;
+    position: absolute;
+    right: 10%;
+}
+
+h1, h2 {
+    font-family: Lato;
+    font-weight: 400;
+}
+
+.helper {
+    height: 300vh;
+    width: 20px;
+}
+
+.info {
+    width: inherit;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
+
+#info3 {
+    color: white;
+    top: 35vh;
+}
+.whitespace {
+    height: 101vh;
+}
+
+.fixed {
+    position: fixed;
+}
+
+#copy {
+    position: fixed;
+    bottom: 2em;
+    left: 2em;
+    color: #666;
+    font-size: smaller;
+}
+
+#copy:hover {
+    color: #ccc;
+}
+
+#rotator {
+    display: none;
+    width: 100px;
+     height: 100px;
+     background-color: blue;
+     position: fixed;
+        left: 10%;
+    top: 15%;
+    z-index: 99;
+ }
+
+#timer {
+    display: none;
+    background-color: grey;
+    padding: 2em;
+    color: white;
+    position: fixed;
+    bottom: 15%;
+    left: 10%;
+    z-index: 99;
+}
+
+#timer-legend {
+    position: relative;
+    float: left;
+    margin-right: 1em;
+    text-align: right;
+}
+
+
+
+#renderer canvas {
+    position: fixed;
+    z-index: -99;
+    height: inherit;
+}
+
+#width {
+    color: white;
+    z-index: 100;
+    text-align: center;
+    position: fixed;
+    top: 10%;
+}
+
+/* Effects */
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
