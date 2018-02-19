@@ -1,0 +1,180 @@
+.content {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: black;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Open Sans", Helvetica;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.6em;
+    margin: 0;
+    transition: background 2s;
+    -webkit-transition: background 2s
+}
+
+.blackBG {
+    background-color: black;
+}
+
+p {
+    margin-top: 2em;
+}
+#graphic {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: #1fabff;
+    font-weight: 400;   
+}
+
+a:hover {
+    color: #ff731f;
+}
+
+.button {
+    display: inline-block;
+    width: 3.5em;
+    border: 1px solid #999;
+    border-radius: 50px;
+    text-align: center;
+    color: #444;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5em;
+    transition: 0.2s;
+}
+
+
+.button:hover{
+    cursor: pointer;
+    background-color: #999;
+    color: white;
+}
+
+/* Header */
+
+.header {
+    color: white;
+    display: block;
+    margin: 0 auto;
+    height: 100vh;
+    text-align: center;
+    margin-bottom: 2em;
+    justify-content: center;
+    z-index: 99;
+}
+
+.header-title {
+    margin-top: 30vh;
+    font-family: monospace;
+    height: 50vh;
+}
+
+#otsikko {
+    font-size: 2em;
+    font-weight: 400;
+    height: 2em;
+    line-height: 2em;
+    margin: 0 auto;
+}
+
+
+#text2 {
+    margin-top: 4em;
+    font-size: 1.2em;
+}
+
+#text3 {
+    width: 85%;
+    max-width: 800px;
+    margin: 4em auto;
+}
+
+#tekstikenttä {
+    text-align: left;
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 2em;
+    color: white;
+}
+
+#bouncer {
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+}
+
+.cursor {
+    animation: blink-caret .75s step-end infinite;
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { color: transparent }
+  50% { color: orange; }
+}
+
+/* Content */
+
+.invisible {
+    display: none;
+}
+section {
+    min-height: 100vh;
+        transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+}
+
+.inner-wrapper {
+    width: 80%;
+    min-width: 700px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.allekirjoitus {
+    text-align: center;
+    margin-left: 6em;
+}
+/* Effects */
+
+.fade {
+    opacity: 0;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+}
+
+.fade img {
+        transition: opacity 0.5s;
+}
+
+#trigger0 {
+    height: 2em;
+    width: 2em;
+}
