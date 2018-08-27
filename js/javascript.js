@@ -1,6 +1,6 @@
 var textData = [["otsikko","Yle Plus-desk - Koodaava toimittaja%1300 Työhakemus"],
                 
-                ["nimike", "Malviina Hallamaa%0100 040-5070357%0150 malviina.hallamaa@gmail.com%0400 "],
+                ["nimike", "Malviina Hallamaa%0100 ***-*******%0150 malviina.hallamaa@gmail.com%0400 "],
                 
                 ["kotisivu", "malviinahallamaa.net"],
                 
